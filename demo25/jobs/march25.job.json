@@ -1,0 +1,39 @@
+{
+  "runAs" : null,
+  "name" : "march25",
+  "description" : "",
+  "schedule" : null,
+  "continuous" : null,
+  "maxConcurrentRuns" : 1,
+  "gitConfig" : null,
+  "queue" : null,
+  "path" : "/Workspace/jobs",
+  "jobClusters" : [ {
+    "clusterKey" : "${jobs.dependencies.tesssst_amisal_amisal_pentest_1_ab0ef35b_12b3_4f1c_9d75_700be67dc994.compute.key}",
+    "clusterName" : "tesssst_amisal_amisal_pentest_1_ab0ef35b_12b3_4f1c_9d75_700be67dc994",
+    "newCluster" : null
+  } ],
+  "tasks" : [ {
+    "type" : "PYTHON_TASK",
+    "taskKey" : "Task_503855",
+    "dependsOn" : [ ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 0,
+    "minRetryIntervalMillis" : null,
+    "isRetryOnTimeout" : false,
+    "filePath" : "${bundle.root}/artifacts/march25.py",
+    "source" : null,
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.tesssst_amisal_amisal_pentest_1_ab0ef35b_12b3_4f1c_9d75_700be67dc994.compute.key}",
+      "clusterName" : null,
+      "newCluster" : null
+    },
+    "commandLineArguments" : null,
+    "timeoutSeconds" : null,
+    "isStreaming" : null
+  } ],
+  "parameters" : null,
+  "timeoutSeconds" : null,
+  "jobTag" : null
+}

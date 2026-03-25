@@ -1,0 +1,48 @@
+{
+  "displayName" : "march25",
+  "description" : null,
+  "pathInfo" : "/Workspace/Agent_flows",
+  "type" : "CANVAS",
+  "entryFilePath" : null,
+  "dependenciesFilePath" : null,
+  "computeKey" : "${agentflows.dependencies.amisal_pentest.aicompute.key}",
+  "diagram" : {
+    "key" : "38552943-4730-492c-bda3-e29038516eac",
+    "displayName" : "march25",
+    "description" : "",
+    "nodes" : {
+      "d16b9f30-cbab-46b1-add4-e3d733df3897" : {
+        "type" : "AGENT",
+        "nodeType" : null,
+        "name" : "AGENT_527395",
+        "description" : "AGENT_description_458408",
+        "positionX" : 128.79999,
+        "positionY" : 153.3,
+        "isExpanded" : null,
+        "parentNodeId" : null,
+        "configuration" : null,
+        "nodeTypeId" : null,
+        "key" : "d16b9f30-cbab-46b1-add4-e3d733df3897",
+        "timeCreated" : null,
+        "timeUpdated" : null,
+        "inputs" : null,
+        "outputs" : null,
+        "validationErrors" : null,
+        "instructions" : "be polite",
+        "llm" : {
+          "modelId" : "openai.gpt-5.4",
+          "provider" : "openai",
+          "regionId" : "us-phoenix-1"
+        },
+        "modelSettings" : null,
+        "tools" : [ ]
+      }
+    },
+    "edges" : { }
+  },
+  "guardrails" : null,
+  "sessionConfig" : {
+    "variables" : { },
+    "sessionRetentionConfig" : null
+  }
+}
