@@ -1,0 +1,39 @@
+{
+  "runAs" : null,
+  "name" : "python_job",
+  "description" : "",
+  "schedule" : null,
+  "continuous" : null,
+  "maxConcurrentRuns" : 1,
+  "gitConfig" : null,
+  "queue" : null,
+  "path" : "/Workspace/jobs",
+  "jobClusters" : [ {
+    "clusterKey" : "${jobs.dependencies.amisal_pentest_1.compute.key}",
+    "clusterName" : "amisal_pentest_1",
+    "newCluster" : null
+  } ],
+  "tasks" : [ {
+    "type" : "PYTHON_TASK",
+    "taskKey" : "Task_226679",
+    "dependsOn" : [ ],
+    "runIf" : "ALL_SUCCESS",
+    "maxRetries" : 0,
+    "minRetryIntervalMillis" : null,
+    "isRetryOnTimeout" : false,
+    "filePath" : "${bundle.root}/artifacts/test.py",
+    "source" : null,
+    "gitConfig" : null,
+    "cluster" : {
+      "clusterKey" : "${jobs.dependencies.amisal_pentest_1.compute.key}",
+      "clusterName" : null,
+      "newCluster" : null
+    },
+    "commandLineArguments" : null,
+    "timeoutSeconds" : null,
+    "isStreaming" : null
+  } ],
+  "parameters" : null,
+  "timeoutSeconds" : null,
+  "jobTag" : null
+}
